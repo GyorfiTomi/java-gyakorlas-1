@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script> 
+        // Létrehozzuk az ‘a’ és ‘b’ változókat, és értéket adunk nekik
+        var a = 15; 
+        var b = 12;
+
+        // Létrehozzuk a 'c' változót, és értéket adunk neki az 'a' és 'b' változók összege alapján
+        var c = a + b;
+
+        // Kiírjuk a változók értékét a konzolba
+        console.log("Az 'a' változó értéke: " + a);
+        console.log("A 'b' változó értéke: " + b);
+        console.log("A 'c' változó értéke: " + c);
+        </script>
+
+</head> 
+    <body> 
+        <h1>Változók értéke</h1> 
+        <p>Az ‘a’ változó értéke: <strong id="a"></strong></p> 
+        <p>A ‘b’ változó értéke: <strong id="b"></strong></p> 
+        <p>A ‘c’ változó értéke: <strong id="c"></strong></p> 
+        <script> 
+        // Megkeressük az HTML elemeket, amelyekben meg akarjuk jeleníteni a változók értékét
+        var aElem = document.getElementById("a"); 
+        var bElem = document.getElementById("b"); 
+        var cElem = document.getElementById("c");
+
+        // Beállítjuk az HTML elemek szövegét a változók értékére
+         aElem.textContent = a;
+         bElem.textContent = b;
+         cElem.textContent = c;
+        </script>
+
+    </body> 
+</html>
